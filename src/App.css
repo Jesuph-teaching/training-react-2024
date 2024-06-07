@@ -1,0 +1,6 @@
+.User{
+  background-color: rgba(0, 0, 0, 0.169);
+  border-radius: 5px ;
+  box-shadow: 1px 3px 3px black;
+  padding: 5px;
+}
