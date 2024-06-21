@@ -1,19 +1,12 @@
-import { useEffect, useState } from "react";
+import useDarkToggler from "../hooks/useDarkToggler";
 
 export default function ThemeToggler() {
-	const [isOn, setIsOn] = useState(false);
-	useEffect(() => {
-		document.body.classList.toggle("dark", isOn);
-	}, [isOn]);
+	const { isDark, toggler } = useDarkToggler();
 
 	return (
 		<div>
-			<button
-				onClick={() => {
-					setIsOn(!isOn);
-				}}
-			>
-				{isOn ? "Dark mode ON" : "dark mode OFF"}
+			<button onClick={toggler}>
+				{isDark ? "Dark mode ON" : "dark mode OFF"}
 			</button>
 		</div>
 	);
