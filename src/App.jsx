@@ -1,12 +1,22 @@
-import { Component } from "react";
 import "./App.css";
-import Evaluator from "./Evaluator";
-export default class App extends Component {
-	render() {
-		return (
-			<div>
-				<Evaluator message="Evalution 1" />
-			</div>
-		);
-	}
+import AdvancedCounter from "./components/AdvancedCounter";
+/* import ToDoList from "./components/ToDoList";
+import TodoInput from "./components/TodoInput"; */
+// import Evaluator from "./components/Evaluator";
+//import ThemeToggler from "./components/ThemeToggler";
+// import Counter from "./components/Counter";
+// import Toggler from "./components/Toggler";
+
+export default function App() {
+	return (
+		<>
+			{/* <Counter /> */}
+			{/* <Toggler />
+			<ThemeToggler />
+			<Evaluator anotherMessage="Hello from app" /> */}
+			{/* <ToDoList />
+			<TodoInput /> */}
+			<AdvancedCounter />
+		</>
+	);
 }

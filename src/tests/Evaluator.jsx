@@ -19,6 +19,7 @@ export default class Evaluator extends Component {
 		console.log("mounted");
 	}
 	componentDidUpdate() {
+		console.log("updated");
 		if (
 			this.state.inputValue >= 10 &&
 			this.state.message !== "Value is greater than 10"
