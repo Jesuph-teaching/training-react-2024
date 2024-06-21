@@ -1,12 +1,12 @@
-import { useState } from "react";
+import useCounter from "../hooks/useCounter";
 
 export default function Counter() {
-	const [state, setState] = useState(0);
+	const { count, decrement, increment } = useCounter();
 	return (
 		<div>
-			<button onClick={() => setState(state - 1)}>-</button>
-			<input type="number" value={state} />
-			<button onClick={() => setState(state + 1)}>+</button>
+			<button onClick={decrement}>-</button>
+			<input type="number" value={count} />
+			<button onClick={increment}>+</button>
 		</div>
 	);
 }
