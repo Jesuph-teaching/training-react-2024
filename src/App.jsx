@@ -1,7 +1,8 @@
 import "./App.css";
-import AdvancedCounter from "./components/AdvancedCounter";
-/* import ToDoList from "./components/ToDoList";
-import TodoInput from "./components/TodoInput"; */
+// import AdvancedCounter from "./components/AdvancedCounter";
+import ToDoListWithReducer from "./components/ToDoListWithReducer";
+import TodoInput from "./components/TodoInput";
+/* import ToDoList from "./components/ToDoList";*/
 // import Evaluator from "./components/Evaluator";
 //import ThemeToggler from "./components/ThemeToggler";
 // import Counter from "./components/Counter";
@@ -16,7 +17,9 @@ export default function App() {
 			<Evaluator anotherMessage="Hello from app" /> */}
 			{/* <ToDoList />
 			<TodoInput /> */}
-			<AdvancedCounter />
+			{/* <AdvancedCounter /> */}
+			<ToDoListWithReducer />
+			<TodoInput />
 		</>
 	);
 }
