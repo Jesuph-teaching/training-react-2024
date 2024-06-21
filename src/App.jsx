@@ -1,4 +1,5 @@
 import "./App.css";
+import ExpensiveComponenet from "./components/ExpensiveComponenet";
 // import AdvancedCounter from "./components/AdvancedCounter";
 import ToDoListWithReducer from "./components/ToDoListWithReducer";
 import TodoInput from "./components/TodoInput";
@@ -18,8 +19,9 @@ export default function App() {
 			{/* <ToDoList />
 			<TodoInput /> */}
 			{/* <AdvancedCounter /> */}
-			<ToDoListWithReducer />
-			<TodoInput />
+			{/* <ToDoListWithReducer />
+			<TodoInput /> */}
+			<ExpensiveComponenet />
 		</>
 	);
 }

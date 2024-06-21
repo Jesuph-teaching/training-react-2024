@@ -39,7 +39,7 @@ export default function AdvancedCounter() {
 				<button onClick={increment}>+</button>
 				{counter}
 				<button
-					onClick={(e) => {
+					onClick={() => {
 						dispatch({ type: "decrement" });
 					}}
 				>
